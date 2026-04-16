@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist_v19/
+
+# Vite temp files
+*.timestamp-*.mjs
+
+# Environment / secrets (never commit)
+.env
+.env.local
+.env.*.local
+
+# Raw data files (already processed into public/india-cities.json)
+Cities_with_Temp_and_Altitude_FINAL.csv
+
+# OS
+.DS_Store
+Thumbs.db
