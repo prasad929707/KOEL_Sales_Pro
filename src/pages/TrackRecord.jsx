@@ -23,7 +23,7 @@ const INDIA_STATES = [
 ]
 
 // ── Ref Card ──────────────────────────────────────────────────────────────────
-function RefCard({ ref: r, isAdmin, onApprove, onReject, onRemove }) {
+function RefCard({ record: r, isAdmin, onApprove, onReject, onRemove }) {
   const [expanded, setExpanded] = useState(false)
   const badge = SOURCE_BADGE[r.source] || SOURCE_BADGE.user
   const isPending = r.status === 'pending'
@@ -499,7 +499,7 @@ export default function TrackRecord() {
             {filtered.map(r => (
               <RefCard
                 key={r.id}
-                ref={r}
+                record={r}
                 isAdmin={isAdmin}
                 onApprove={handleApprove}
                 onReject={handleReject}
