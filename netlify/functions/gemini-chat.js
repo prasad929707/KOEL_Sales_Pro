@@ -1,17 +1,9 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// KOEL Gemini Chat — Netlify Serverless Function
+// KOEL AI Chat — Netlify Serverless Function (powered by Groq)
 // Route: POST /.netlify/functions/gemini-chat
 //
-// Keeps GEMINI_API_KEY server-side (never exposed to browser).
+// Keeps GROQ_API_KEY server-side (never exposed to browser).
 // Reads all .md / .txt files from ./knowledge/ folder as additional context.
-// The knowledge/ folder can be updated without changing this file.
-//
-// Request body:
-//   { message, history, context }
-//   history: [{ role: 'user'|'model', text: string }]
-//   context: { segmentId, segment, customerName, city, products, concerns, commercialTerms }
-//
-// Response: { text: string } or { error: string }
 // ─────────────────────────────────────────────────────────────────────────────
 
 const { readFileSync, readdirSync, existsSync } = require('fs')
@@ -24,7 +16,7 @@ function loadKnowledge() {
 
   const files = readdirSync(knowledgeDir)
     .filter(f => f.endsWith('.md') || f.endsWith('.txt'))
-    .sort()  // alphabetical → numbered prefix controls order
+    .sort()
 
   return files.map(f => {
     const content = readFileSync(join(knowledgeDir, f), 'utf-8').trim()
@@ -32,7 +24,6 @@ function loadKnowledge() {
   }).join('')
 }
 
-// Cache at cold-start (loaded once per function instance)
 const KNOWLEDGE_BASE = loadKnowledge()
 
 // ── Core system prompt ────────────────────────────────────────────────────────
@@ -62,36 +53,7 @@ CRITICAL RULES:
 ${KNOWLEDGE_BASE}
 `
 
-// ── Build conversation history for Gemini ─────────────────────────────────────
-function buildContents(message, history, context) {
-  // Prepend a context summary as the opening user message if context is provided
-  const contextBlock = context ? buildContextBlock(context) : ''
-  const contents = []
-
-  if (contextBlock) {
-    contents.push({
-      role: 'user',
-      parts: [{ text: `[CURRENT PITCH CONTEXT]\n${contextBlock}` }],
-    })
-    contents.push({
-      role: 'model',
-      parts: [{ text: 'Understood — I have the context for this pitch. What would you like to know?' }],
-    })
-  }
-
-  // Add conversation history
-  for (const msg of (history || [])) {
-    if (msg.role === 'user' || msg.role === 'model') {
-      contents.push({ role: msg.role, parts: [{ text: msg.text }] })
-    }
-  }
-
-  // Add current message
-  contents.push({ role: 'user', parts: [{ text: message }] })
-
-  return contents
-}
-
+// ── Build context block from pitch data ───────────────────────────────────────
 function buildContextBlock(ctx) {
   if (!ctx) return ''
   const lines = []
@@ -102,7 +64,7 @@ function buildContextBlock(ctx) {
     const prods = ctx.products.map(p => `${p.kva} kVA ${p.model || ''} (loading: ${p.loadingPct || '?'}%)`).join(', ')
     lines.push(`Products selected: ${prods}`)
   }
-  if (ctx.concerns)          lines.push(`Rep's case notes: "${ctx.concerns}"`)
+  if (ctx.concerns)               lines.push(`Rep's case notes: "${ctx.concerns}"`)
   if (ctx.selectedChallenges?.length) lines.push(`Customer challenges: ${ctx.selectedChallenges.join(', ')}`)
   if (ctx.commercialTerms) {
     const ct = ctx.commercialTerms
@@ -117,46 +79,72 @@ function buildContextBlock(ctx) {
   return lines.join('\n')
 }
 
-// ── Gemini API call ───────────────────────────────────────────────────────────
-async function callGemini(message, history, context) {
-  const apiKey = process.env.GEMINI_API_KEY
-  if (!apiKey) throw new Error('GEMINI_API_KEY not set in environment variables')
+// ── Build OpenAI-compatible messages array ────────────────────────────────────
+function buildMessages(message, history, context) {
+  const messages = [
+    { role: 'system', content: CORE_SYSTEM_PROMPT }
+  ]
 
-  const model   = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
-  const url     = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`
+  // Inject pitch context as first exchange
+  const contextBlock = buildContextBlock(context)
+  if (contextBlock) {
+    messages.push({ role: 'user',      content: `[CURRENT PITCH CONTEXT]\n${contextBlock}` })
+    messages.push({ role: 'assistant', content: 'Understood — I have the context for this pitch. What would you like to know?' })
+  }
+
+  // Add conversation history (Gemini uses 'model', OpenAI uses 'assistant')
+  for (const msg of (history || [])) {
+    if (msg.role === 'user') {
+      messages.push({ role: 'user', content: msg.text })
+    } else if (msg.role === 'model' || msg.role === 'assistant') {
+      messages.push({ role: 'assistant', content: msg.text })
+    }
+  }
+
+  // Add current user message
+  messages.push({ role: 'user', content: message })
+
+  return messages
+}
+
+// ── Groq API call ─────────────────────────────────────────────────────────────
+async function callGroq(message, history, context) {
+  const apiKey = process.env.GROQ_API_KEY
+  if (!apiKey) throw new Error('GROQ_API_KEY not set in environment variables')
+
+  const model = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile'
+  const url   = 'https://api.groq.com/openai/v1/chat/completions'
 
   const body = {
-    system_instruction: {
-      parts: [{ text: CORE_SYSTEM_PROMPT }],
-    },
-    contents: buildContents(message, history, context),
-    generationConfig: {
-      temperature:     0.65,
-      maxOutputTokens: 800,
-      topP:            0.9,
-    },
+    model,
+    messages:    buildMessages(message, history, context),
+    temperature: 0.65,
+    max_tokens:  800,
+    top_p:       0.9,
   }
 
   const res = await fetch(url, {
     method:  'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body:    JSON.stringify(body),
+    headers: {
+      'Content-Type':  'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify(body),
   })
 
   if (!res.ok) {
     const errText = await res.text()
-    throw new Error(`Gemini API error ${res.status}: ${errText}`)
+    throw new Error(`Groq API error ${res.status}: ${errText}`)
   }
 
   const data = await res.json()
-  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text
-  if (!text) throw new Error('Empty response from Gemini')
+  const text = data?.choices?.[0]?.message?.content
+  if (!text) throw new Error('Empty response from Groq')
   return text.trim()
 }
 
 // ── Netlify handler ───────────────────────────────────────────────────────────
 exports.handler = async (event) => {
-  // CORS
   const headers = {
     'Access-Control-Allow-Origin':  '*',
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -178,7 +166,7 @@ exports.handler = async (event) => {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'message is required' }) }
     }
 
-    const text = await callGemini(message.trim(), history || [], context || null)
+    const text = await callGroq(message.trim(), history || [], context || null)
     return { statusCode: 200, headers, body: JSON.stringify({ text }) }
 
   } catch (err) {
