@@ -303,7 +303,7 @@ export default function SegmentsPlaceholder() {
 
         <div style={{ paddingTop: 'var(--s8)', marginBottom: 'var(--s5)' }}>
           <div style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--teal)', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>
-            Phase 3 · Segment Intelligence
+            Phase 3 · Segment Deep Dives
           </div>
           <h2 style={{ margin: 0, fontSize: '1.5rem', color: 'var(--slate)' }}>Segment Cheat Sheets</h2>
           <p style={{ margin: '6px 0 0', color: 'var(--gray)', fontSize: '0.875rem' }}>

@@ -1,0 +1,158 @@
+{
+  "_meta": {
+    "title": "KOEL — FY25 actuals (market anchors)",
+    "company": "Kirloskar Oil Engines Ltd",
+    "fyEnded": "2025-03-31",
+    "primarySource": "Kirloskar Oil Engines Ltd — Annual Report FY 2024-25",
+    "primarySourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf",
+    "secondarySource": "KOEL Q1 FY26 Investor Presentation (June 2025)",
+    "secondarySourceUrl": "Landscape/KOEL/Investor Presentation June 2025.pdf",
+    "note": "KOEL discloses Power Gen as a separate sub-segment within B2B in the MD&A. Consolidated segment reporting splits only B2B / B2C / Financial Services — so Power Gen EBIT is not independently disclosed.",
+    "lastFullRefresh": "2026-04-17"
+  },
+  "rows": [
+    {
+      "metricId": "totalRevenue",
+      "label": "Total revenue (standalone)",
+      "value": 5073,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20 (Sales chart, 5-year)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Standalone revenue. Consolidated FY25 revenue is ₹6,349.13 Cr (incl. Financial Services)."
+    },
+    {
+      "metricId": "ebitda",
+      "label": "EBITDA (standalone)",
+      "value": 654,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20 (EBITDA chart)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Excluding exceptional items. EBITDA margin = 12.9%."
+    },
+    {
+      "metricId": "netProfit",
+      "label": "Net profit (standalone)",
+      "value": 432,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20 (Net Profit chart)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹362 Cr. EPS FY25 ₹30 (FY24 ₹25)."
+    },
+    {
+      "metricId": "powerGenRevenue",
+      "label": "Power Gen segment revenue (standalone)",
+      "value": 1969,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20 (Segment wise revenue highlights)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY22: ₹1,297 · FY23: ₹1,655 · FY24: ₹1,905 · FY25: ₹1,969. Largest sub-segment inside B2B (49% of consolidated B2B per Q1 FY26 IR deck)."
+    },
+    {
+      "metricId": "b2bSegmentRevenue",
+      "label": "B2B consolidated segment revenue",
+      "value": 4481,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.322 (Consolidated segment reporting)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=322",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "B2B PBET = ₹489.53 Cr (10.9% margin). Covers Power Gen + Industrial + D&AM + Exports."
+    },
+    {
+      "metricId": "industrialRevenue",
+      "label": "Industrial segment revenue (standalone)",
+      "value": 1133,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20 (Segment wise revenue highlights)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹1,008 Cr. +12% YoY, driven by construction / infrastructure demand."
+    },
+    {
+      "metricId": "distributionAfterMarketRevenue",
+      "label": "Distribution & After Market revenue",
+      "value": 843,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹749 Cr. +13% YoY."
+    },
+    {
+      "metricId": "wmsRevenue",
+      "label": "Water Management Solutions revenue (incl. international)",
+      "value": 591,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹537 Cr. +10% YoY. B2C segment."
+    },
+    {
+      "metricId": "internationalRevenue",
+      "label": "International B2B revenue (standalone)",
+      "value": 488,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.20",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹520 Cr. -6% YoY — geopolitical drag in MENA."
+    },
+    {
+      "metricId": "exportRevenue",
+      "label": "Total export sales (standalone)",
+      "value": 531,
+      "unit": "₹ Cr",
+      "source": "KOEL AR FY24-25, p.23 (Manufacturing capital — Outputs)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=23",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Standalone. Consolidated export (incl. B2C) is ₹702.50 Cr per segment note p.323."
+    },
+    {
+      "metricId": "unitVolume",
+      "label": "Total gensets sold",
+      "value": 7572,
+      "unit": "units",
+      "source": "KOEL AR FY24-25, p.23 (Manufacturing capital — Outputs)",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=23",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Aggregate across all kVA bands. Power Gen-only volume is not disclosed separately."
+    },
+    {
+      "metricId": "avgRealization",
+      "label": "Avg realization per genset (implied)",
+      "value": 26,
+      "unit": "₹ Lakh",
+      "source": "Computed: Power Gen ₹1,969 Cr ÷ 7,572 gensets",
+      "sourceUrl": "Landscape/KOEL/Annual Report FY 2024-25.pdf#page=20",
+      "confidence": "medium",
+      "lastUpdated": "2026-04-17",
+      "notes": "Rough triangulation. Denominator includes non-Power-Gen gensets, so actual Power-Gen realization is higher. Treat as floor."
+    },
+    {
+      "metricId": "cpcb4ShareRevenue",
+      "label": "CPCB IV+ share of Power Gen revenue",
+      "value": null,
+      "unit": "%",
+      "source": "Needs data",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "",
+      "notes": "Not disclosed. CPCB IV+ became mandatory 01-Jul-2024 for gensets up to 800 kW — FY25 is first full year. Flag as question for management commentary."
+    }
+  ]
+}

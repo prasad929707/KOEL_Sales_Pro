@@ -1,0 +1,435 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Data Centers — Market Intelligence Layer
+// Sources: JLL India Data Centre Report 2024, CBRE India DC Quarterly Q3 2024,
+//          operator IR decks, datacentermap.com, ET Tech, Mint
+//
+// THIS FILE IS RESEARCH-SEEDED — update via DC Research Skill when fresh data needed.
+// All figures in public domain. Figures marked (E) are JLL/CBRE projections.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// ── Market growth: installed IT capacity in MW ────────────────────────────────
+// Source: JLL India Data Centre Report (annual). FY = April–March Indian fiscal year.
+export const CAPACITY_GROWTH = [
+  { year: 'FY20', mw: 220,  actual: true,  source: 'JLL India DC Report 2022' },
+  { year: 'FY21', mw: 295,  actual: true,  source: 'JLL India DC Report 2022' },
+  { year: 'FY22', mw: 400,  actual: true,  source: 'JLL India DC Report 2022' },
+  { year: 'FY23', mw: 595,  actual: true,  source: 'JLL India DC Report 2023' },
+  { year: 'FY24', mw: 900,  actual: true,  source: 'JLL India DC Report 2024 (latest)' },
+  { year: 'FY25', mw: 1350, actual: false, source: 'JLL India DC Report 2024 — projection' },
+  { year: 'FY26', mw: 1950, actual: false, source: 'JLL India DC Report 2024 — projection' },
+  { year: 'FY27', mw: 2700, actual: false, source: 'CBRE India DC Outlook 2024 — projection' },
+  { year: 'FY28', mw: 3500, actual: false, source: 'CBRE India DC Outlook 2024 — projection' },
+  { year: 'FY30', mw: 5000, actual: false, source: 'JLL + CBRE consensus estimate' },
+]
+
+// ── Investment pipeline ───────────────────────────────────────────────────────
+// Source: CBRE India, MeitY, operator IR decks (as of Q3 FY2025)
+export const INVESTMENT = {
+  committed_usd_bn: 10.4,
+  announced_usd_bn: 25.0,
+  source: 'CBRE India DC Quarterly Q3 2024; MeitY Digital Infrastructure data',
+}
+
+// ── Geographic split: installed capacity by metro (FY2024) ───────────────────
+// Source: JLL India Data Centre Report 2024
+export const GEO_SPLIT = [
+  { city: 'Mumbai / Navi Mumbai', mw: 360, pct: 40, state: 'Maharashtra', goem: 'Kala',   color: '#db2777' },
+  { city: 'Hyderabad',            mw: 180, pct: 20, state: 'Telangana',   goem: 'Sunbeam', color: '#dc2626' },
+  { city: 'Chennai',              mw: 135, pct: 15, state: 'Tamil Nadu',  goem: 'Sunbeam', color: '#dc2626' },
+  { city: 'Bangalore',            mw:  90, pct: 10, state: 'Karnataka',   goem: 'Sunbeam', color: '#dc2626' },
+  { city: 'Delhi NCR',            mw:  72, pct:  8, state: 'Delhi',       goem: 'IEC',     color: '#2563eb' },
+  { city: 'Others',               mw:  63, pct:  7, state: '—',           goem: 'Mixed',   color: '#94a3b8' },
+]
+
+// ── Headline numbers ──────────────────────────────────────────────────────────
+export const HEADLINES = [
+  {
+    value: '900 MW',
+    label: 'Installed IT capacity',
+    sub: 'FY2024 actuals',
+    source: 'JLL India DC Report 2024',
+    accent: '#0d9488',
+  },
+  {
+    value: '5,000 MW',
+    label: 'Projected by FY2030',
+    sub: '~30% CAGR over 6 years',
+    source: 'JLL + CBRE consensus',
+    accent: '#0d9488',
+  },
+  {
+    value: '$10.4B',
+    label: 'Investment committed',
+    sub: 'Announced pipeline as of Q3 FY25',
+    source: 'CBRE India Q3 2024',
+    accent: '#0d9488',
+  },
+  {
+    value: '4.1 GVA',
+    label: 'KOEL addressable DG (FY24–30)',
+    sub: 'New capacity × 1.4× backup factor',
+    source: 'KOEL estimate at 1 MW IT = 1,400 kVA',
+    accent: '#14b8a6',
+  },
+]
+
+// ── Growth narrative ──────────────────────────────────────────────────────────
+export const GROWTH_STORY = [
+  {
+    year: 'FY2024',
+    event: 'India crosses 900 MW installed — doubled in 2 years.',
+    type: 'milestone',
+  },
+  {
+    year: '2023–24',
+    event: '₹83,000 Cr in DC investments announced in one fiscal year (MeitY). Hyperscalers (AWS, Google, Microsoft) each committed India expansions.',
+    type: 'investment',
+  },
+  {
+    year: '2024–25',
+    event: 'CPCB IV+ transition forces genset replacement across existing installed base — even Cummins customers must re-specify. KOEL is CPCB IV+ compliant across full range.',
+    type: 'koel_opportunity',
+  },
+  {
+    year: '2025–26',
+    event: 'AI/GPU clusters driving power density from 5 kW/rack to 30–80 kW/rack. Backup DG requirement per MW rises — higher kVA per MW of IT load.',
+    type: 'tailwind',
+  },
+  {
+    year: 'FY2030',
+    event: 'India projected to reach 5,000 MW — adding ~4,100 MW of new capacity. At 1.4× backup factor: 5.74 GVA of new DG required. CAT/Cummins cannot serve all of it alone.',
+    type: 'opportunity',
+  },
+]
+
+// ── Project intelligence table ────────────────────────────────────────────────
+// koelLikelihood: 'high' | 'medium' | 'low' | 'unlikely' | 'unknown'
+// competitors: string[] — likely competing OEMs for this project
+// rationale: shown in expanded row / tooltip
+export const PROJECTS = [
+  {
+    id: 'p01',
+    operator:    'Yotta Data Services (Hiranandani)',
+    project:     'YottaCity NM3',
+    city:        'Navi Mumbai',
+    state:       'Maharashtra',
+    mwIt:        30,
+    kvaEstimate: 42000,
+    status:      'under_construction',
+    goem:        'Kala',
+    currentOem:  null,
+    koelLikelihood: 'high',
+    commissionFy:   'FY2026',
+    competitors:    [],
+    rationale:   'Indian operator — no global OEM lock-in. Procurement open. Kala covers Maharashtra. 42,000 kVA → 3–4× Optiprime 12,500 kVA sets (N+1). Action: Kala to engage Yotta engineering team now.',
+    source:      'Yotta IR FY2025; CBRE Q3 2024',
+  },
+  {
+    id: 'p02',
+    operator:    'Web Werks India (NTT subsidiary)',
+    project:     'NAP Navi Mumbai — Phase 2',
+    city:        'Navi Mumbai',
+    state:       'Maharashtra',
+    mwIt:        20,
+    kvaEstimate: 28000,
+    status:      'under_construction',
+    goem:        'Kala',
+    currentOem:  null,
+    koelLikelihood: 'high',
+    commissionFy:   'FY2026',
+    competitors:    ['Cummins'],
+    rationale:   'Post-NTT acquisition, India operations remain semi-autonomous. 28,000 kVA is well within KOEL mid-HHP range. Kala has Maharashtra relationship. Strong candidate.',
+    source:      'NTT India press release; JLL India DC 2024',
+  },
+  {
+    id: 'p03',
+    operator:    'CtrlS Datacenters',
+    project:     'HYD1 Phase 4 Expansion',
+    city:        'Hyderabad',
+    state:       'Telangana',
+    mwIt:        25,
+    kvaEstimate: 35000,
+    status:      'under_construction',
+    goem:        'Sunbeam',
+    currentOem:  null,
+    koelLikelihood: 'high',
+    commissionFy:   'FY2025',
+    competitors:    [],
+    rationale:   'Pure Indian operator — no global OEM preference documented. Sunbeam covers Hyderabad. Phase 4 is a fresh spec. 35,000 kVA is directly addressable. Action: Sunbeam to approach CtrlS facility engineering.',
+    source:      'CtrlS press releases; Dataquest India 2024',
+  },
+  {
+    id: 'p04',
+    operator:    'Nxtra Data (Airtel)',
+    project:     'HYD1 Expansion',
+    city:        'Hyderabad',
+    state:       'Telangana',
+    mwIt:        15,
+    kvaEstimate: 21000,
+    status:      'under_construction',
+    goem:        'Sunbeam',
+    currentOem:  null,
+    koelLikelihood: 'high',
+    commissionFy:   'FY2026',
+    competitors:    [],
+    rationale:   'Nxtra procures by facility — no centralized OEM standard published. 21,000 kVA is in KOEL HHP sweet spot. Sunbeam covers Hyderabad. Low competition from CAT/Cummins at this scale.',
+    source:      'Nxtra investor deck; Airtel AR FY2025',
+  },
+  {
+    id: 'p05',
+    operator:    'NTT Global Data Centres (Netmagic)',
+    project:     'Bangalore BLR1',
+    city:        'Bangalore',
+    state:       'Karnataka',
+    mwIt:        20,
+    kvaEstimate: 28000,
+    status:      'under_construction',
+    goem:        'Sunbeam',
+    currentOem:  null,
+    koelLikelihood: 'high',
+    commissionFy:   'FY2026',
+    competitors:    ['Cummins'],
+    rationale:   'NTT India has a history of multi-OEM procurement across facilities. BLR1 is a new spec — no incumbent. Sunbeam covers Karnataka. 28,000 kVA well within range.',
+    source:      'NTT India media; datacentermap.com',
+  },
+  {
+    id: 'p06',
+    operator:    'CtrlS Datacenters',
+    project:     'Bangalore BLR1 (announced)',
+    city:        'Bangalore',
+    state:       'Karnataka',
+    mwIt:        40,
+    kvaEstimate: 56000,
+    status:      'announced',
+    goem:        'Sunbeam',
+    currentOem:  null,
+    koelLikelihood: 'high',
+    commissionFy:   'FY2027',
+    competitors:    ['Cummins'],
+    rationale:   'Still at announcement stage — spec window is open. Indian operator, India-first procurement. 56,000 kVA → 4–5× Optiprime. Sunbeam should seek early EPC engagement before CAT/Cummins get written into consultant spec.',
+    source:      'CtrlS corporate announcement; ET Tech',
+  },
+  {
+    id: 'p07',
+    operator:    'STT GDC India',
+    project:     'Mumbai MUM10',
+    city:        'Mumbai',
+    state:       'Maharashtra',
+    mwIt:        30,
+    kvaEstimate: 42000,
+    status:      'under_construction',
+    goem:        'Kala',
+    currentOem:  null,
+    koelLikelihood: 'medium',
+    commissionFy:   'FY2026',
+    competitors:    ['Caterpillar', 'Cummins'],
+    rationale:   'ST Telemedia (Singapore HQ) does not have a single global DG standard — India procurement is project-level. However, EPC consultants used by STT often default to CAT spec. Kala must engage at EPC consultant stage, not post-award.',
+    source:      'STT GDC India; CBRE India Q4 2024',
+  },
+  {
+    id: 'p08',
+    operator:    'GPX India',
+    project:     'GPX Mumbai (Navi Mumbai campus)',
+    city:        'Navi Mumbai',
+    state:       'Maharashtra',
+    mwIt:        30,
+    kvaEstimate: 42000,
+    status:      'announced',
+    goem:        'Kala',
+    currentOem:  null,
+    koelLikelihood: 'medium',
+    commissionFy:   'FY2027',
+    competitors:    ['Cummins', 'Caterpillar'],
+    rationale:   'US-backed colocation operator. Procurement model not yet public. EPC consultant will likely drive spec. Kala to monitor and engage early. Mumbai is KOEL-friendly territory.',
+    source:      'GPX India press release 2024; ET Tech',
+  },
+  {
+    id: 'p09',
+    operator:    'AdaniConnex (Adani × EdgeConneX JV)',
+    project:     'Navi Mumbai Phase 1',
+    city:        'Navi Mumbai',
+    state:       'Maharashtra',
+    mwIt:        50,
+    kvaEstimate: 70000,
+    status:      'announced',
+    goem:        'Kala',
+    currentOem:  null,
+    koelLikelihood: 'medium',
+    commissionFy:   'FY2026',
+    competitors:    ['Caterpillar', 'Cummins'],
+    rationale:   'EdgeConneX (US partner) brings hyperscale design templates that typically specify CAT/Cummins. However, Phase 1 procurement is India-managed and Adani has strong preference for Indian supply chain. Early engagement with Adani procurement team needed.',
+    source:      'Adani Enterprises Investor Day Dec 2023; Mint; Hindu BusinessLine',
+  },
+  {
+    id: 'p10',
+    operator:    'Sify Technologies',
+    project:     'Rabale (Navi Mumbai) — expansion',
+    city:        'Navi Mumbai',
+    state:       'Maharashtra',
+    mwIt:        20,
+    kvaEstimate: 28000,
+    status:      'under_construction',
+    goem:        'Kala',
+    currentOem:  null,
+    koelLikelihood: 'medium',
+    commissionFy:   'FY2026',
+    competitors:    ['Cummins'],
+    rationale:   'Sify is a domestic operator but has existing DG relationships that may continue. OEM for current facilities not publicly disclosed. Worth Kala probing Sify procurement for expansion contract.',
+    source:      'Sify Technologies AR FY2025; datacentermap.com',
+  },
+  {
+    id: 'p11',
+    operator:    'Yotta Data Services',
+    project:     'YottaCity NM1 + NM2 (operational)',
+    city:        'Navi Mumbai',
+    state:       'Maharashtra',
+    mwIt:        60,
+    kvaEstimate: 84000,
+    status:      'commissioned',
+    goem:        'Kala',
+    currentOem:  null,
+    koelLikelihood: 'unknown',
+    commissionFy:   'FY2023',
+    competitors:    ['Cummins'],
+    rationale:   'Operational — DG OEM not publicly disclosed. AMC (Annual Maintenance Contract) is the entry if KOEL did not win the original supply. Kala to identify installed make.',
+    source:      'Yotta Data Services; JLL India DC Report 2024',
+  },
+  {
+    id: 'p12',
+    operator:    'NTT Global DC (Netmagic)',
+    project:     'Chennai NDC1 + NDC2',
+    city:        'Chennai',
+    state:       'Tamil Nadu',
+    mwIt:        30,
+    kvaEstimate: 42000,
+    status:      'commissioned',
+    goem:        'Sunbeam',
+    currentOem:  null,
+    koelLikelihood: 'unknown',
+    commissionFy:   'FY2023',
+    competitors:    ['Cummins'],
+    rationale:   'Operational. DG OEM not disclosed. NDC3 expansion is the live opportunity — see separate entry if tracked. Sunbeam to identify installed DG make for AMC entry point.',
+    source:      'NTT India; datacentermap.com',
+  },
+  {
+    id: 'p13',
+    operator:    'Google Cloud India',
+    project:     'India West 1 Region (Mumbai)',
+    city:        'Mumbai',
+    state:       'Maharashtra',
+    mwIt:        30,
+    kvaEstimate: 42000,
+    status:      'commissioned',
+    goem:        'Kala',
+    currentOem:  'Cummins (estimated)',
+    koelLikelihood: 'low',
+    commissionFy:   'FY2022',
+    competitors:    ['Cummins'],
+    rationale:   'Google globally standardises DG specifications — Cummins or CAT. Operational, so no supply opportunity. Tracking for market sizing only. Future region expansion is where to watch.',
+    source:      'Google Cloud India blog; industry sources',
+  },
+  {
+    id: 'p14',
+    operator:    'Microsoft Azure (India)',
+    project:     'Azure India West — Pune expansion',
+    city:        'Pune',
+    state:       'Maharashtra',
+    mwIt:        30,
+    kvaEstimate: 42000,
+    status:      'under_construction',
+    goem:        'Kala',
+    currentOem:  'Cummins (estimated)',
+    koelLikelihood: 'low',
+    commissionFy:   'FY2026',
+    competitors:    ['Cummins'],
+    rationale:   'Microsoft Azure globally uses Cummins and CAT — India is unlikely to deviate. Tracking for market size reference. Service contract opportunity post-commissioning if KOEL has local service support in Pune through Kala.',
+    source:      'Microsoft India blog Jan 2025; ET Tech; CBRE',
+  },
+  {
+    id: 'p15',
+    operator:    'Amazon Web Services India',
+    project:     'Asia Pacific (Hyderabad) Region',
+    city:        'Hyderabad',
+    state:       'Telangana',
+    mwIt:        100,
+    kvaEstimate: 140000,
+    status:      'commissioned',
+    goem:        'Sunbeam',
+    currentOem:  'Caterpillar',
+    koelLikelihood: 'unlikely',
+    commissionFy:   'FY2022',
+    competitors:    ['Caterpillar'],
+    rationale:   'AWS uses Caterpillar globally. Operational and locked. No supply opportunity. Tracked for total market sizing — 140,000 kVA is the scale KOEL must build toward for next-gen hyperscale relevance.',
+    source:      'AWS press release Nov 2022; JLL India DC 2024; industry sources',
+  },
+]
+
+// ── Likelihood config ─────────────────────────────────────────────────────────
+export const LIKELIHOOD_CFG = {
+  high:     { label: 'High',     color: '#0d9488', bg: 'rgba(13,148,136,0.12)', border: 'rgba(13,148,136,0.3)',  dots: 4, description: 'Indian operator · open procurement · GOEM active · KOEL-range kVA' },
+  medium:   { label: 'Medium',   color: '#b45309', bg: 'rgba(180,83,9,0.10)',   border: 'rgba(180,83,9,0.25)',   dots: 3, description: 'Open procurement but global JV or EPC consultant risk' },
+  low:      { label: 'Low',      color: '#7c3aed', bg: 'rgba(124,58,237,0.08)', border: 'rgba(124,58,237,0.2)',  dots: 2, description: 'Global hyperscaler — strong OEM preference, low probability' },
+  unlikely: { label: 'Unlikely', color: '#dc2626', bg: 'rgba(220,38,38,0.08)',  border: 'rgba(220,38,38,0.2)',   dots: 1, description: 'Already awarded to competitor or globally locked standard' },
+  unknown:  { label: 'Tracking', color: '#64748b', bg: 'rgba(100,116,139,0.08)', border: 'rgba(100,116,139,0.2)', dots: 0, description: 'Commissioned — OEM not disclosed. AMC entry point.' },
+}
+
+// ── Status config ─────────────────────────────────────────────────────────────
+export const STATUS_CFG = {
+  announced:          { label: 'Announced',    color: '#f59e0b', bg: 'rgba(245,158,11,0.1)' },
+  under_construction: { label: 'Under Const.', color: '#2563eb', bg: 'rgba(37,99,235,0.08)' },
+  commissioned:       { label: 'Live',         color: '#16a34a', bg: 'rgba(22,163,74,0.08)' },
+}
+
+// ── Research sources — the agent reads these when refreshing this segment ──────
+// Each source has: id, name, url (optional), type, notes (optional)
+export const SOURCES = [
+  { id: 's01', name: 'JLL India Data Centre Report 2024', url: 'https://www.jll.co.in/en/trends-and-insights/research/india-data-centre-report', type: 'report',   notes: 'Annual. Capacity MW, geo split, investment pipeline. Primary source for market sizing.' },
+  { id: 's02', name: 'CBRE India DC Quarterly Q3 2024',   url: 'https://www.cbre.co.in/insights/reports/india-data-centre-market-overview', type: 'report',   notes: 'Quarterly. Investment committed vs announced. Good for pipeline validation.' },
+  { id: 's03', name: 'datacentermap.com / India',         url: 'https://www.datacentermap.com/india/', type: 'directory', notes: 'Operator-by-operator facility list with city + capacity estimates.' },
+  { id: 's04', name: 'Yotta Data Services IR FY2025',     url: 'https://www.yotta.com/investor-relations', type: 'ir',       notes: 'Capacity expansion plans, NM3 commissioning timeline, Phase 3+ pipeline.' },
+  { id: 's05', name: 'AdaniConnex announcements',         url: 'https://www.adaniconnex.com/media/', type: 'press',    notes: 'Navi Mumbai Phase 1 MoU, 1 GW long-term plan, JV structure with EdgeConneX.' },
+  { id: 's06', name: 'MeitY Digital Infrastructure data', url: 'https://meity.gov.in/content/data-centres', type: 'govt',     notes: 'Policy framework, approved DC zones, PLI scheme details.' },
+  { id: 's07', name: 'ET Tech / Mint — DC press releases',url: '', type: 'press',    notes: 'Project announcements, funding rounds, operator expansions. Scan weekly.' },
+  { id: 's08', name: 'CtrlS Datacenters Ltd DRHP',        url: 'https://www.sebi.gov.in', type: 'ir',       notes: 'IPO filing — detailed capacity data, revenue, client list (if available).' },
+]
+
+// ── Competitor landscape — Data Centers segment ───────────────────────────────
+// Used by CompetitorMapping section in DCIntelligence
+export const COMPETITOR_MAP = [
+  {
+    name:       'Cummins',
+    color:      '#dc2626',
+    threat:     'high',           // 'high' | 'contest' | 'low'
+    shareEst:   '55–60%',
+    strongholds: [
+      'Global hyperscalers (Google, Microsoft) — spec locked at HQ level',
+      'Large co-lo operators with US/Singapore JV partners',
+      '2,500 kVA+ high-density and N+2 configurations',
+    ],
+    koelWins: [
+      'Indian domestic operators: Yotta, CtrlS, Nxtra — no global OEM preference',
+      'CPCB IV+ compliance advantage: many Cummins sets require costly retrofit',
+      'Price and delivery cycle in 500–2,500 kVA band where KOEL is competitive',
+    ],
+    koelPlay:   'Engage Indian operators before the EPC consultant enters the project — Cummins gets written into specs at the consultant stage. First-mover with facility engineering teams wins.',
+    projectsWhere: 7,
+  },
+  {
+    name:       'Caterpillar',
+    color:      '#f59e0b',
+    threat:     'high',
+    shareEst:   '25–30%',
+    strongholds: [
+      'AWS globally — locked standard, no deviation observed in India',
+      'Large BFSI, mission-critical sites requiring CAT OEM service contracts',
+      'Projects specified by global EPC consultants (Jacobs, WSP, Arup)',
+    ],
+    koelWins: [
+      'Domestic co-lo operators and phase-2/3 expansions where KOEL is already present',
+      'Faster India delivery cycle — CAT imports from US add 12–18 weeks lead time',
+      'Service network in Tier 2 cities where CAT has limited coverage',
+    ],
+    koelPlay:   'CAT lead times and import costs are a pain point on fast-tracked DC builds. Position KOEL on delivery speed and in-country stock. Target AWS-adjacent co-lo operators for supply.',
+    projectsWhere: 3,
+  },
+]

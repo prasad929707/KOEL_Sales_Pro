@@ -1,0 +1,456 @@
+{
+  "_meta": {
+    "title": "Editable scenario knobs per segment",
+    "description": "User overrides for CAGR, share gain, realization growth. Feeds FY30 path.",
+    "lastFullRefresh": "2026-04-17",
+    "note": "Values here OVERRIDE segments.json metrics when scenario is 'custom'. When scenario='baseline' we read segments.json directly."
+  },
+  "scenarios": {
+    "baseline": {
+      "label": "Baseline (AR + industry CAGR)",
+      "description": "Use as-disclosed numbers, industry CAGR from Crisil / ICRA / CLSA."
+    },
+    "aggressive": {
+      "label": "Aggressive (KOEL share gain +2pp)",
+      "description": "Assume KOEL takes 2 percentage points of share in each segment by FY30."
+    },
+    "custom": {
+      "label": "Custom (user-edited knobs)",
+      "description": "Per-segment manual overrides below."
+    }
+  },
+  "customOverrides": [
+    {
+      "segmentId": "data_centers",
+      "industryCagrOverride": {
+        "metricId": "data_centers_cagr_ovr",
+        "label": "Data Centres — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "data_centers_share_ovr",
+        "label": "Data Centres — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "data_centers_real_ovr",
+        "label": "Data Centres — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "real_estate",
+      "industryCagrOverride": {
+        "metricId": "real_estate_cagr_ovr",
+        "label": "Real Estate — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "real_estate_share_ovr",
+        "label": "Real Estate — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "real_estate_real_ovr",
+        "label": "Real Estate — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "healthcare",
+      "industryCagrOverride": {
+        "metricId": "healthcare_cagr_ovr",
+        "label": "Healthcare — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "healthcare_share_ovr",
+        "label": "Healthcare — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "healthcare_real_ovr",
+        "label": "Healthcare — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "telecom",
+      "industryCagrOverride": {
+        "metricId": "telecom_cagr_ovr",
+        "label": "Telecom — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "telecom_share_ovr",
+        "label": "Telecom — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "telecom_real_ovr",
+        "label": "Telecom — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "hospitality",
+      "industryCagrOverride": {
+        "metricId": "hospitality_cagr_ovr",
+        "label": "Hospitality — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "hospitality_share_ovr",
+        "label": "Hospitality — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "hospitality_real_ovr",
+        "label": "Hospitality — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "infrastructure",
+      "industryCagrOverride": {
+        "metricId": "infrastructure_cagr_ovr",
+        "label": "Infrastructure — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "infrastructure_share_ovr",
+        "label": "Infrastructure — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "infrastructure_real_ovr",
+        "label": "Infrastructure — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "industrial_mfg",
+      "industryCagrOverride": {
+        "metricId": "industrial_mfg_cagr_ovr",
+        "label": "Industrial & Mfg — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "industrial_mfg_share_ovr",
+        "label": "Industrial & Mfg — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "industrial_mfg_real_ovr",
+        "label": "Industrial & Mfg — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "retail_malls",
+      "industryCagrOverride": {
+        "metricId": "retail_malls_cagr_ovr",
+        "label": "Retail & Malls — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "retail_malls_share_ovr",
+        "label": "Retail & Malls — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "retail_malls_real_ovr",
+        "label": "Retail & Malls — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "education",
+      "industryCagrOverride": {
+        "metricId": "education_cagr_ovr",
+        "label": "Education — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "education_share_ovr",
+        "label": "Education — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "education_real_ovr",
+        "label": "Education — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "bfsi",
+      "industryCagrOverride": {
+        "metricId": "bfsi_cagr_ovr",
+        "label": "BFSI / IT-ITES — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "bfsi_share_ovr",
+        "label": "BFSI / IT-ITES — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "bfsi_real_ovr",
+        "label": "BFSI / IT-ITES — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "govt_defense",
+      "industryCagrOverride": {
+        "metricId": "govt_defense_cagr_ovr",
+        "label": "Government & Defence — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "govt_defense_share_ovr",
+        "label": "Government & Defence — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "govt_defense_real_ovr",
+        "label": "Government & Defence — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    },
+    {
+      "segmentId": "agri_foodprocess",
+      "industryCagrOverride": {
+        "metricId": "agri_foodprocess_cagr_ovr",
+        "label": "Agri & Food Processing — industry CAGR override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "shareGainOverride": {
+        "metricId": "agri_foodprocess_share_ovr",
+        "label": "Agri & Food Processing — share gain override",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "realizationGrowthOverride": {
+        "metricId": "agri_foodprocess_real_ovr",
+        "label": "Agri & Food Processing — realization growth ovr",
+        "value": null,
+        "unit": "%",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      }
+    }
+  ]
+}

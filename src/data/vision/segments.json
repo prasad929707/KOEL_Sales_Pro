@@ -1,0 +1,741 @@
+{
+  "_meta": {
+    "title": "Segment-level numbers for Vision Lab",
+    "description": "12 canonical segments × 5 Entry fields each. Drives scenario calculation.",
+    "lastFullRefresh": "2026-04-17"
+  },
+  "rows": [
+    {
+      "segmentId": "data_centers",
+      "label": "Data Centres",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "real_estate",
+      "label": "Real Estate",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "healthcare",
+      "label": "Healthcare",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "telecom",
+      "label": "Telecom",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "hospitality",
+      "label": "Hospitality",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "infrastructure",
+      "label": "Infrastructure",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "industrial_mfg",
+      "label": "Industrial & Mfg",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "retail_malls",
+      "label": "Retail & Malls",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "education",
+      "label": "Education",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "bfsi",
+      "label": "BFSI / IT-ITES",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "govt_defense",
+      "label": "Government & Defence",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "segmentId": "agri_foodprocess",
+      "label": "Agri & Food Processing",
+      "metrics": {
+        "marketSizeFy25": {
+          "metricId": "marketSizeFy25",
+          "label": "FY25 market size",
+          "value": null,
+          "unit": "₹ Cr",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareFy25": {
+          "metricId": "koelShareFy25",
+          "label": "KOEL share, FY25",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "industryCagr": {
+          "metricId": "industryCagr",
+          "label": "Industry CAGR (FY25→FY30)",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "koelShareTargetFy30": {
+          "metricId": "koelShareTargetFy30",
+          "label": "KOEL share target, FY30",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "realizationGrowth": {
+          "metricId": "realizationGrowth",
+          "label": "Avg realization growth p.a.",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    }
+  ]
+}

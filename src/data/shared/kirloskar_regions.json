@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "title": "KOEL internal zonal regions",
+    "description": "KOEL's own North/South/East/West/Central operational zones. Separate from GOEM territories — this is internal.",
+    "lastFullRefresh": "2026-04-17",
+    "note": "Populate after confirming current zonal taxonomy. Zones may not align 1:1 with GOEM territories."
+  },
+  "zones": [
+    {
+      "zoneId": "north",
+      "label": "North Zone",
+      "states": [],
+      "zonalHeadOffice": ""
+    },
+    {
+      "zoneId": "south",
+      "label": "South Zone",
+      "states": [],
+      "zonalHeadOffice": ""
+    },
+    {
+      "zoneId": "east",
+      "label": "East Zone",
+      "states": [],
+      "zonalHeadOffice": ""
+    },
+    {
+      "zoneId": "west",
+      "label": "West Zone",
+      "states": [],
+      "zonalHeadOffice": ""
+    },
+    {
+      "zoneId": "central",
+      "label": "Central Zone",
+      "states": [],
+      "zonalHeadOffice": ""
+    }
+  ]
+}

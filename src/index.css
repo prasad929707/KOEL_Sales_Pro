@@ -43,7 +43,9 @@
   --s4: 16px;
   --s5: 20px;
   --s6: 24px;
+  --s7: 28px;
   --s8: 32px;
+  --s9: 36px;
   --s10: 40px;
   --s12: 48px;
   --s16: 64px;
@@ -65,6 +67,12 @@
   /* Transitions */
   --t-fast:   150ms ease;
   --t-normal: 220ms ease;
+
+  /* Dark module backgrounds — matches Sales Pro's dark card style */
+  --navy:       #0D1F2D;
+  --navy-mid:   #0F2A38;
+  --navy-card:  #0D1F2D;
+  --navy-border: rgba(0,123,127,0.25);
 }
 
 /* ── Reset ────────────────────────────────────────────────── */

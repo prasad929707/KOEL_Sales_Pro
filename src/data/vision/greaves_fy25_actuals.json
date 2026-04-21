@@ -1,0 +1,167 @@
+{
+  "_meta": {
+    "title": "Greaves Cotton — FY25 actuals (market anchors)",
+    "company": "Greaves Cotton Limited",
+    "fyEnded": "2025-03-31",
+    "primarySource": "Greaves Cotton — Annual Report 2024-25",
+    "primarySourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf",
+    "note": "Greaves reports 4 segments: Engines / Electric Mobility / Cables & Levers / Others. The Engines segment combines Automotive Engines + Non-Automotive (Gensets) + Farm + Spares — Power Gen revenue is NOT isolated. Numbers below are CONSOLIDATED unless marked standalone.",
+    "lastFullRefresh": "2026-04-17"
+  },
+  "rows": [
+    {
+      "metricId": "totalRevenue",
+      "label": "Total revenue (consolidated)",
+      "value": 2918,
+      "unit": "₹ Cr",
+      "source": "Greaves AR FY24-25, p.18 (Consolidated Financial Performance) / p.272 (Segment note)",
+      "sourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf#page=18",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹2,633.19 Cr. +11% YoY. New business initiatives = 63% of total consolidated revenue."
+    },
+    {
+      "metricId": "ebitda",
+      "label": "EBITDA (consolidated)",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not disclosed as headline",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Greaves AR does not disclose EBITDA directly. Needs computation from P&L + D&A; skipped for now."
+    },
+    {
+      "metricId": "netProfit",
+      "label": "Net profit / (loss) (consolidated)",
+      "value": -6.28,
+      "unit": "₹ Cr",
+      "source": "Greaves AR FY24-25, p.272 / p.18",
+      "sourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf#page=18",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Loss after tax. FY24 loss was ₹367.27 Cr — significant improvement. EPS ₹2.51 (FY24: -₹5.83) — includes exceptional items."
+    },
+    {
+      "metricId": "powerGenRevenue",
+      "label": "Power Gen segment revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not separately disclosed",
+      "sourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf#page=272",
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Engines segment (₹1,795.65 Cr) bundles Automotive + Non-Automotive (Gensets) + Farm + Spares. Power Gen alone is a subset — AR narrative mentions CPCB IV+ genset launches and data-centre fire-fighting engine demand but no ₹ figure."
+    },
+    {
+      "metricId": "b2bSegmentRevenue",
+      "label": "Engines segment revenue (consolidated)",
+      "value": 1795.65,
+      "unit": "₹ Cr",
+      "source": "Greaves AR FY24-25, p.272 (Segment revenue)",
+      "sourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf#page=272",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹1,614.67 Cr. +11.2% YoY. Segment result (profit) ₹305.43 Cr — 17.0% margin. Covers Automotive + Non-Automotive + Farm + Spares."
+    },
+    {
+      "metricId": "industrialRevenue",
+      "label": "Industrial engine revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not disclosed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Not separated. Narrative: growth in firefighting (FMUL engines), agri, construction, components; marine segment growing."
+    },
+    {
+      "metricId": "distributionAfterMarketRevenue",
+      "label": "Retail / Aftermarket revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not separately disclosed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Greaves Retail is a separate business unit but revenue rolls up within 'Others' segment (₹222.59 Cr) — not strictly comparable to KOEL D&AM."
+    },
+    {
+      "metricId": "wmsRevenue",
+      "label": "Water Management / Pumps revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not applicable — Greaves has no WMS business",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Greaves does not operate in water / pump business."
+    },
+    {
+      "metricId": "internationalRevenue",
+      "label": "Overseas revenue (consolidated)",
+      "value": 199.19,
+      "unit": "₹ Cr",
+      "source": "Greaves AR FY24-25, p.273 (Geographical information)",
+      "sourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf#page=273",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹182.43 Cr. Small export base (6.8% of consolidated revenue). Africa + SAARC + ME growing; SEA + Turkey weak."
+    },
+    {
+      "metricId": "exportRevenue",
+      "label": "Export revenue",
+      "value": 199.19,
+      "unit": "₹ Cr",
+      "source": "Greaves AR FY24-25, p.273 (Overseas revenue)",
+      "sourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf#page=273",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Same as 'Overseas revenue' above."
+    },
+    {
+      "metricId": "unitVolume",
+      "label": "Gensets sold",
+      "value": null,
+      "unit": "units",
+      "source": "Not disclosed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Not disclosed. AR mentions industry-wide genset market volumes fell 8% but value grew 10% (shift to high-value HHP). Assembled entirely in-house at Talegaon plant."
+    },
+    {
+      "metricId": "avgRealization",
+      "label": "Avg realization per unit (implied)",
+      "value": null,
+      "unit": "₹ Lakh",
+      "source": "Cannot be computed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Neither numerator (Power Gen revenue) nor denominator (units) disclosed."
+    },
+    {
+      "metricId": "serviceNetwork",
+      "label": "Genset service network locations",
+      "value": 120,
+      "unit": "locations",
+      "source": "Greaves AR FY24-25, p.18 (Engineering Business narrative)",
+      "sourceUrl": "Landscape/Greaves_Cotton/Annual-Report-2024-25.pdf#page=18",
+      "confidence": "medium",
+      "lastUpdated": "2026-04-17",
+      "notes": "Reported as '120+ locations'. 24/7 support, remote monitoring via 'Greaves 1' app."
+    },
+    {
+      "metricId": "cpcb4ShareRevenue",
+      "label": "CPCB IV+ share of Power Gen revenue",
+      "value": null,
+      "unit": "%",
+      "source": "Not disclosed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "",
+      "notes": "Narrative: CPCB IV+ compliant range launched in FY25; FY25 saw CPCB II pre-buy then transition. No % disclosed."
+    }
+  ]
+}

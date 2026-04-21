@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "title": "Hospitality — hotel pipeline (3-5 star)",
+    "description": "HVS India / JLL hotels & hospitality outlook. Signed rooms vs operational rooms.",
+    "lastFullRefresh": "2026-04-17",
+    "rowSchema": {
+      "projectId": "string — stable unique id (e.g. 'dc_mumbai_stt_01')",
+      "projectName": "string — developer / operator project name",
+      "developer": "string — developer / owner / operator",
+      "city": "string",
+      "state": "string — must match canonical SoI state name",
+      "scaleDescriptor": "string — e.g. '50 MW IT load, Phase 1'",
+      "gensetKvaEstimate": "Entry — kVA demand estimate for this project (number, unit 'kVA')",
+      "commissionYear": "Entry — expected commissioning (number, unit 'FY')",
+      "status": "string — 'announced' | 'under_construction' | 'commissioned' | 'stalled'",
+      "awardedGoemId": "string | null — GOEM who won (if known)",
+      "awardedMake": "string | null — OEM genset supplier (if known)",
+      "source": "string — JLL report, IR deck, press release, etc.",
+      "sourceUrl": "string | null",
+      "confidence": "'high' | 'medium' | 'low'",
+      "lastUpdated": "YYYY-MM-DD",
+      "notes": "string | null"
+    },
+    "hint": "Focus: IHG, Marriott, Taj, Oberoi, Radisson, Accor pipeline by city. Resort-type (Goa, Rajasthan, Kerala, HP, Uttarakhand)."
+  },
+  "projects": []
+}

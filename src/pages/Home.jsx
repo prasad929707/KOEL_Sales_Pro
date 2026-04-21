@@ -202,7 +202,7 @@ export default function Home() {
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                 </svg>
               </div>
-              <div className="module-card__title">Segment Intelligence</div>
+              <div className="module-card__title">Segment Analysis</div>
               <div className="module-card__desc">Deep cheat sheets for 12 industry segments. Buyer profiles, sizing norms, key talking points. India heatmap showing where each segment clusters.</div>
               <div className="module-card__cta">Explore segments →</div>
             </div>
@@ -353,7 +353,7 @@ export default function Home() {
       {/* ── Quick Compare CTA ─────────────────────────────────── */}
       <section style={{ padding: 'var(--s12) 0', background: 'var(--white)' }}>
         <div className="container" style={{ textAlign: 'center' }}>
-          <div className="section-eyebrow">Competitor Intelligence</div>
+          <div className="section-eyebrow">Competitor Analysis</div>
           <h2 style={{ marginBottom: 'var(--s3)' }}>Head-to-Head Comparison</h2>
           <p style={{ color: 'var(--gray)', maxWidth: 520, margin: '0 auto var(--s8)' }}>
             Compare any KOEL genset against Cummins, Mahindra Powerol, or Greaves Cotton —

@@ -1,0 +1,574 @@
+{
+  "_meta": {
+    "title": "Per-kVA-band market share estimates, FY25",
+    "description": "Revenue ÷ realization triangulation, per band × competitor.",
+    "lastFullRefresh": "2026-04-17",
+    "methodology": "If a competitor discloses total Power Gen revenue and kVA-band unit volumes, compute share = their_units / total_band_units. Flag as estimate with confidence='medium' or 'low'."
+  },
+  "rows": [
+    {
+      "kvaBandId": "sub_63",
+      "label": "Up to 63 kVA",
+      "totalBandSizeUnits": {
+        "metricId": "sub_63_total_units",
+        "label": "Up to 63 kVA — total India units FY25",
+        "value": null,
+        "unit": "units",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "totalBandRevenue": {
+        "metricId": "sub_63_total_rev",
+        "label": "Up to 63 kVA — total India revenue FY25",
+        "value": null,
+        "unit": "₹ Cr",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "competitorShares": {
+        "koel": {
+          "metricId": "sub_63_share_koel",
+          "label": "Up to 63 kVA — koel share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "cummins": {
+          "metricId": "sub_63_share_cummins",
+          "label": "Up to 63 kVA — cummins share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "greaves": {
+          "metricId": "sub_63_share_greaves",
+          "label": "Up to 63 kVA — greaves share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "mahindra": {
+          "metricId": "sub_63_share_mahindra",
+          "label": "Up to 63 kVA — mahindra share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "ashok_leyland": {
+          "metricId": "sub_63_share_ashok_leyland",
+          "label": "Up to 63 kVA — ashok_leyland share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "other": {
+          "metricId": "sub_63_share_other",
+          "label": "Up to 63 kVA — other share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "kvaBandId": "75_125",
+      "label": "75–125 kVA",
+      "totalBandSizeUnits": {
+        "metricId": "75_125_total_units",
+        "label": "75–125 kVA — total India units FY25",
+        "value": null,
+        "unit": "units",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "totalBandRevenue": {
+        "metricId": "75_125_total_rev",
+        "label": "75–125 kVA — total India revenue FY25",
+        "value": null,
+        "unit": "₹ Cr",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "competitorShares": {
+        "koel": {
+          "metricId": "75_125_share_koel",
+          "label": "75–125 kVA — koel share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "cummins": {
+          "metricId": "75_125_share_cummins",
+          "label": "75–125 kVA — cummins share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "greaves": {
+          "metricId": "75_125_share_greaves",
+          "label": "75–125 kVA — greaves share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "mahindra": {
+          "metricId": "75_125_share_mahindra",
+          "label": "75–125 kVA — mahindra share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "ashok_leyland": {
+          "metricId": "75_125_share_ashok_leyland",
+          "label": "75–125 kVA — ashok_leyland share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "other": {
+          "metricId": "75_125_share_other",
+          "label": "75–125 kVA — other share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "kvaBandId": "140_320",
+      "label": "140–320 kVA",
+      "totalBandSizeUnits": {
+        "metricId": "140_320_total_units",
+        "label": "140–320 kVA — total India units FY25",
+        "value": null,
+        "unit": "units",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "totalBandRevenue": {
+        "metricId": "140_320_total_rev",
+        "label": "140–320 kVA — total India revenue FY25",
+        "value": null,
+        "unit": "₹ Cr",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "competitorShares": {
+        "koel": {
+          "metricId": "140_320_share_koel",
+          "label": "140–320 kVA — koel share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "cummins": {
+          "metricId": "140_320_share_cummins",
+          "label": "140–320 kVA — cummins share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "greaves": {
+          "metricId": "140_320_share_greaves",
+          "label": "140–320 kVA — greaves share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "mahindra": {
+          "metricId": "140_320_share_mahindra",
+          "label": "140–320 kVA — mahindra share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "ashok_leyland": {
+          "metricId": "140_320_share_ashok_leyland",
+          "label": "140–320 kVA — ashok_leyland share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "other": {
+          "metricId": "140_320_share_other",
+          "label": "140–320 kVA — other share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "kvaBandId": "380_750",
+      "label": "380–750 kVA",
+      "totalBandSizeUnits": {
+        "metricId": "380_750_total_units",
+        "label": "380–750 kVA — total India units FY25",
+        "value": null,
+        "unit": "units",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "totalBandRevenue": {
+        "metricId": "380_750_total_rev",
+        "label": "380–750 kVA — total India revenue FY25",
+        "value": null,
+        "unit": "₹ Cr",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "competitorShares": {
+        "koel": {
+          "metricId": "380_750_share_koel",
+          "label": "380–750 kVA — koel share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "cummins": {
+          "metricId": "380_750_share_cummins",
+          "label": "380–750 kVA — cummins share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "greaves": {
+          "metricId": "380_750_share_greaves",
+          "label": "380–750 kVA — greaves share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "mahindra": {
+          "metricId": "380_750_share_mahindra",
+          "label": "380–750 kVA — mahindra share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "ashok_leyland": {
+          "metricId": "380_750_share_ashok_leyland",
+          "label": "380–750 kVA — ashok_leyland share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "other": {
+          "metricId": "380_750_share_other",
+          "label": "380–750 kVA — other share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "kvaBandId": "750_1500",
+      "label": "750–1500 kVA",
+      "totalBandSizeUnits": {
+        "metricId": "750_1500_total_units",
+        "label": "750–1500 kVA — total India units FY25",
+        "value": null,
+        "unit": "units",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "totalBandRevenue": {
+        "metricId": "750_1500_total_rev",
+        "label": "750–1500 kVA — total India revenue FY25",
+        "value": null,
+        "unit": "₹ Cr",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "competitorShares": {
+        "koel": {
+          "metricId": "750_1500_share_koel",
+          "label": "750–1500 kVA — koel share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "cummins": {
+          "metricId": "750_1500_share_cummins",
+          "label": "750–1500 kVA — cummins share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "greaves": {
+          "metricId": "750_1500_share_greaves",
+          "label": "750–1500 kVA — greaves share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "mahindra": {
+          "metricId": "750_1500_share_mahindra",
+          "label": "750–1500 kVA — mahindra share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "ashok_leyland": {
+          "metricId": "750_1500_share_ashok_leyland",
+          "label": "750–1500 kVA — ashok_leyland share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "other": {
+          "metricId": "750_1500_share_other",
+          "label": "750–1500 kVA — other share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    },
+    {
+      "kvaBandId": "above_1500",
+      "label": "Above 1500 kVA",
+      "totalBandSizeUnits": {
+        "metricId": "above_1500_total_units",
+        "label": "Above 1500 kVA — total India units FY25",
+        "value": null,
+        "unit": "units",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "totalBandRevenue": {
+        "metricId": "above_1500_total_rev",
+        "label": "Above 1500 kVA — total India revenue FY25",
+        "value": null,
+        "unit": "₹ Cr",
+        "source": "Needs data",
+        "sourceUrl": null,
+        "confidence": "low",
+        "lastUpdated": "",
+        "notes": null
+      },
+      "competitorShares": {
+        "koel": {
+          "metricId": "above_1500_share_koel",
+          "label": "Above 1500 kVA — koel share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "cummins": {
+          "metricId": "above_1500_share_cummins",
+          "label": "Above 1500 kVA — cummins share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "greaves": {
+          "metricId": "above_1500_share_greaves",
+          "label": "Above 1500 kVA — greaves share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "mahindra": {
+          "metricId": "above_1500_share_mahindra",
+          "label": "Above 1500 kVA — mahindra share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "ashok_leyland": {
+          "metricId": "above_1500_share_ashok_leyland",
+          "label": "Above 1500 kVA — ashok_leyland share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        },
+        "other": {
+          "metricId": "above_1500_share_other",
+          "label": "Above 1500 kVA — other share",
+          "value": null,
+          "unit": "%",
+          "source": "Needs data",
+          "sourceUrl": null,
+          "confidence": "low",
+          "lastUpdated": "",
+          "notes": null
+        }
+      }
+    }
+  ]
+}

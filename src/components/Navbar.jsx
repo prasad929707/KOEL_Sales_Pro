@@ -48,19 +48,35 @@ export default function Navbar() {
     ? session.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()
     : 'KO'
 
+  // ── Module context (drives the label + which nav links show) ───────────────
+  // /opportunities*  → Marksight Opportunity (orange)
+  // /vision-lab*     → Marksight Vision Lab (slate)
+  // everything else  → Sales Pro (teal)
+  const isOpportunities = location.pathname.startsWith('/opportunities')
+  const isVisionLab     = location.pathname.startsWith('/vision-lab')
+  const isSalesPro      = !isOpportunities && !isVisionLab
+  const moduleLabel = isOpportunities ? 'Marksight Opportunity'
+                    : isVisionLab     ? 'Marksight Vision Lab'
+                    : 'Sales Pro'
+  const moduleColor = isOpportunities ? '#E87722'
+                    : isVisionLab     ? '#1E2D3D'
+                    : 'var(--teal)'
+
   return (
     <nav className="navbar">
       <div className="navbar__inner">
 
-        {/* Logo */}
+        {/* Logo + module label */}
         <Link to="/" className="navbar__logo">
           <img src="/logo.jpg" alt="Kirloskar Oil Engines" />
           <div className="navbar__logo-divider" />
-          <span className="navbar__logo-label">Sales Pro</span>
+          <span className="navbar__logo-label" style={{ color: moduleColor, fontWeight: 700 }}>
+            {moduleLabel}
+          </span>
         </Link>
 
-        {/* Nav links */}
-        <div className="navbar__nav">
+        {/* Nav links — only on Sales Pro routes */}
+        {isSalesPro && <div className="navbar__nav">
 
           {/* Products dropdown — click-based */}
           <div className="navbar__dropdown" ref={productsRef}>
@@ -139,7 +155,7 @@ export default function Navbar() {
           >
             Track Record
           </Link>
-        </div>
+        </div>}
 
         <div className="navbar__spacer" />
 

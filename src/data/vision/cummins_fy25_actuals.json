@@ -1,0 +1,180 @@
+{
+  "_meta": {
+    "title": "Cummins India — FY25 actuals (market anchors)",
+    "company": "Cummins India Limited",
+    "fyEnded": "2025-03-31",
+    "primarySource": "Cummins India Limited — Annual Report 2024-25",
+    "primarySourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf",
+    "secondarySource": "Cummins India — Investor PPT (Feb 17, 2025)",
+    "secondarySourceUrl": "Landscape/Cummins-India/Signed SE Intimation Combined Investor PPT Feb 17 2025.pdf",
+    "note": "Cummins India reports only TWO segments for CODM purposes — Engines and Lubes. Power Gen revenue is NOT separately disclosed. Volume / output figures from MD&A are rounded / qualitative ('25,000+').",
+    "lastFullRefresh": "2026-04-17"
+  },
+  "rows": [
+    {
+      "metricId": "totalRevenue",
+      "label": "Total revenue (standalone)",
+      "value": 10339,
+      "unit": "₹ Cr",
+      "source": "Cummins AR FY24-25, p.186 (Standalone P&L — Revenue from operations)",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=186",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹8,958.60 Cr. +15.4% YoY. Consolidated Engines segment ₹10,219.24 Cr (p.339)."
+    },
+    {
+      "metricId": "ebitda",
+      "label": "EBITDA (standalone, computed)",
+      "value": 2694,
+      "unit": "₹ Cr",
+      "source": "Computed: PBT ₹2,496.14 Cr + D&A ₹182.90 Cr + Finance costs ₹15.12 Cr (AR p.186)",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=186",
+      "confidence": "medium",
+      "lastUpdated": "2026-04-17",
+      "notes": "Computed from P&L line items. EBITDA margin ~26.1%. Cummins does not disclose EBITDA as a headline metric."
+    },
+    {
+      "metricId": "netProfit",
+      "label": "Net profit (standalone)",
+      "value": 1906,
+      "unit": "₹ Cr",
+      "source": "Cummins AR FY24-25, p.186 (Profit after tax)",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=186",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹1,660.62 Cr. +14.8% YoY. EPS ₹68.75 (FY24 ₹59.91)."
+    },
+    {
+      "metricId": "powerGenRevenue",
+      "label": "Power Gen segment revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not disclosed",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=339",
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Cummins segment note (p.339) reports only Engines + Lubes — no Power Gen / Industrial / Distribution split. Needs triangulation via unit volume × realization."
+    },
+    {
+      "metricId": "b2bSegmentRevenue",
+      "label": "Engines segment revenue (consolidated)",
+      "value": 10219,
+      "unit": "₹ Cr",
+      "source": "Cummins AR FY24-25, p.339 (Note 44 Segment information — consolidated)",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=339",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Engines segment incl. PowerGen + Industrial + Distribution + Exports. Lubes JV (Valvoline Cummins) sales ₹2,352 Cr is equity-accounted separately."
+    },
+    {
+      "metricId": "industrialRevenue",
+      "label": "Industrial segment revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not disclosed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Not separated in segment reporting. Narrative: strong growth in Rail DETCs + HLCs + Defence + Marine."
+    },
+    {
+      "metricId": "distributionAfterMarketRevenue",
+      "label": "Distribution Business Unit (DBU) revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not disclosed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "DBU includes PMS + RAS + OptiNAS+ + DGBLUE + aftermarket. 61% YoY growth with one construction-equip OEM (AR p.51)."
+    },
+    {
+      "metricId": "wmsRevenue",
+      "label": "Water Management revenue",
+      "value": null,
+      "unit": "₹ Cr",
+      "source": "Not applicable — Cummins has no WMS business",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Cummins India does not operate in water / pumps. Entry kept for schema consistency."
+    },
+    {
+      "metricId": "internationalRevenue",
+      "label": "Revenue outside India",
+      "value": 1771,
+      "unit": "₹ Cr",
+      "source": "Cummins AR FY24-25, p.225 (Disaggregated revenue — Location)",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=225",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "FY24: ₹1,552.94 Cr. Driven by HHP PowerGen to NACA + LHP products to LatAm / Europe / ME. 17.1% of standalone revenue."
+    },
+    {
+      "metricId": "exportRevenue",
+      "label": "Export revenue",
+      "value": 1771,
+      "unit": "₹ Cr",
+      "source": "Cummins AR FY24-25, p.225",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=225",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Same as 'Outside India' location. Includes inter-company sales to Cummins group (Cummins Ltd UK: ₹1,059 Cr per RPT p.43)."
+    },
+    {
+      "metricId": "unitVolume",
+      "label": "Gensets sold (FY25)",
+      "value": 25000,
+      "unit": "units",
+      "source": "Cummins AR FY24-25, p.15 (Power generation — FY24-25 highlights)",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=15",
+      "confidence": "medium",
+      "lastUpdated": "2026-04-17",
+      "notes": "Reported as '25,000+ Generator sets sold'. Rounded disclosure — not an exact figure. Also '7,000+ MW delivered' on same page."
+    },
+    {
+      "metricId": "avgRealization",
+      "label": "Avg realization per unit (implied)",
+      "value": null,
+      "unit": "₹ Lakh",
+      "source": "Cannot be computed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "2026-04-17",
+      "notes": "Numerator (Power Gen revenue) is not disclosed. Denominator (25,000+ units) is rounded."
+    },
+    {
+      "metricId": "cpcb4UnitsDelivered",
+      "label": "CPCB IV+ gensets delivered FY25",
+      "value": 23000,
+      "unit": "units",
+      "source": "Cummins AR FY24-25, p.15 / p.50",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=15",
+      "confidence": "medium",
+      "lastUpdated": "2026-04-17",
+      "notes": "'23,000+ CPCB IV+ gensets' — strong uptake in Delhi NCR per MD&A. Cummins claims first-mover advantage."
+    },
+    {
+      "metricId": "goemDealerCount",
+      "label": "GOEM dealer network",
+      "value": 127,
+      "unit": "dealers",
+      "source": "Cummins AR FY24-25, p.53 (Achievements — Power Generation)",
+      "sourceUrl": "Landscape/KOEL/cummins-india-limited-ar-2024-25.pdf#page=53",
+      "confidence": "high",
+      "lastUpdated": "2026-04-17",
+      "notes": "Expanded from 113 (FY24) → 127 (FY25). +12% channel expansion YoY."
+    },
+    {
+      "metricId": "cpcb4ShareRevenue",
+      "label": "CPCB IV+ share of Power Gen revenue",
+      "value": null,
+      "unit": "%",
+      "source": "Not disclosed",
+      "sourceUrl": null,
+      "confidence": "low",
+      "lastUpdated": "",
+      "notes": "Not disclosed. Triangulation: 23,000 of 25,000 units = 92% by volume, but mix / price effects unknown."
+    }
+  ]
+}

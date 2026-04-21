@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "title": "GOEM territory assignments",
+    "description": "Official KOEL Genset OEM territory map. One GOEM may own multiple states; some states are shared/unassigned.",
+    "lastFullRefresh": "2026-04-17",
+    "note": "State names MUST use canonical SoI names from public/india-states.geojson (Odisha, Uttarakhand, Jammu & Kashmir, Ladakh, etc.). Legacy names get mapped via STATE_NAME_ALIASES in IndiaMap.jsx but the source of truth here stays canonical."
+  },
+  "goems": [],
+  "stateAssignments": {}
+}

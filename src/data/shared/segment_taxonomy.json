@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "title": "Canonical segment taxonomy (v1)",
+    "description": "12 segments, their typical kVA ranges, and any sub-segments. This is the single source of truth — Opportunities + Vision Lab both import from here.",
+    "lastFullRefresh": "2026-04-17",
+    "versionNote": "v1 derived from PULSE segment codes + rationalisation. Revisit after BD lead signs off."
+  },
+  "segments": [
+    {
+      "segmentId": "data_centers",
+      "label": "Data Centres",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "real_estate",
+      "label": "Real Estate",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "healthcare",
+      "label": "Healthcare",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "telecom",
+      "label": "Telecom",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "hospitality",
+      "label": "Hospitality",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "infrastructure",
+      "label": "Infrastructure",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "industrial_mfg",
+      "label": "Industrial & Mfg",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "retail_malls",
+      "label": "Retail & Malls",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "education",
+      "label": "Education",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "bfsi",
+      "label": "BFSI / IT-ITES",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "govt_defense",
+      "label": "Government & Defence",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    },
+    {
+      "segmentId": "agri_foodprocess",
+      "label": "Agri & Food Processing",
+      "typicalKvaBands": [],
+      "subSegments": [],
+      "primarySource": ""
+    }
+  ]
+}
